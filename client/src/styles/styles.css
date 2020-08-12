@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* ALL HEADER CSS */
+.app-bar {
+  display: flex;
+  background: #fff;
+  align-self: center;
+  padding: 0 20px;
+}
+
+.app-bar-brand {
+  display: inline-block;
+  padding: 0 20px;
+}
+.app-bar-brand img {
+  width: 36px;
+}
+.app-bar-brandName {
+  font-weight: 600;
+  font-size: 16px;
+}
+@media (max-width: 1120px) {
+  .app-bar-brandName {
+    display: none;
+  }
+}
+.app-bar-searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+.app-bar-searchbar .ant-input-group {
+  border: 0;
+  width: 100%;
+  max-width: 460px;
+}
+.app-bar-searchbar .ant-input-group input,
+.home-searchbar-button {
+  border: 1px solid #f0f1f2;
+  box-shadow: 0 2px 4px rgba(29, 34, 108, 0.1);
+}
+.app-bar-dropdown-end {
+  justify-content: flex-end;
+}
+
+.app-bar-text {
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+/* Login Page*/
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.login-card {
+  width: 500px;
+  text-align: center;
+}
+.login-card-button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 8px;
+  border-width: 2px;
+  border-style: hidden;
+  background: #ff4d4f;
+}
+
+.login-google {
+  display: flex;
+  align-items: center;
+}
+.login-icon {
+  flex: 0;
+}
+
+.login-google-icon {
+  height: 20px;
+  width: 20px;
+}
+.login-title {
+  padding-top: 10px;
+}
+.login-google-text {
+  flex: 1;
+  text-align: center;
+  padding: 7px;
+}
+
+/* Listing Card*/
+#landing::after {
+  content: "\a";
+  white-space: pre;
+}
+#landing {
+  color: rgb(34, 34, 34);
+}
+.listing-card-img {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 12px;
+}
+.listing-card-details {
+  padding-bottom: 20px;
+}
+.listings-card-total {
+  font-size: 16px;
+  line-height: 18px;
+  padding-bottom: 12px;
+}
+
+.listing-card-property-type.ant-typography,
+.listing-card-title.ant-typography {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(34, 34, 34);
+}
+
+.listings-skeleton-img {
+  width: 100%;
+  height: 200px;
+}
+/* Empty page/ cant find a route page*/
+.empty-page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+}
+.empty-page-huge-text {
+  font-size: 130px;
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+  margin-bottom: 15px;
+}
+.empty-page-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* HOME PAGE*/
+.home {
+  position: relative;
+}
+@media (max-width: 75em) {
+  .home {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.home-landing {
+  position: relative;
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.home-landing-text {
+  font-size: 52px;
+  color: rgb(34, 34, 34);
+}
+
+.home-landing-title.ant-typography {
+  color: #ff4d4f;
+  font: 52px sans-serif;
+}
+.home-destinations-text.ant-typography {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+  margin: 0px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.home-searchbar {
+  max-width: 1080px;
+  padding-bottom: 10px;
+}
+.home-listings {
+  padding: 40px 0 20px;
+}
+.home-content {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.home-content-title.ant-typography {
+  color: #ff4d4f;
+  display: inline-block;
+}
+
+.home-destinations {
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.home-destinations .ant-card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.home-skeleton-spinner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-skeleton {
+  height: 100%;
+  background: #fff;
+  display: flex;
+}
+
+/* Host page/form*/
+
+.host-layout {
+  display: table;
+  position: relative;
+  max-width: 912px;
+  margin: 0 auto;
+}
+.host-form {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.host-step {
+  font-size: 19px;
+  padding: 30px 30px 16px;
+}
+.host-step-header {
+  margin-bottom: 15px;
+}
+.host-step-buttons {
+  position: fixed !important;
+  width: 100% !important;
+}
+.host-step-buttons-wrapper {
+  max-width: 912px;
+}
+.host-left-button {
+  float: left;
+}
+.host-right-button {
+  float: right;
+}
+
+.host-submit-buttom {
+  display: flex;
+  justify-content: center;
+}
+.host-image-upload img {
+  width: 200px;
+}
+
+/* Listings*/
+
+.listings {
+  padding: 60px 120px;
+}
+@media (max-width: 1200px) {
+  .listings {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.listings-filters {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background: #fff;
+}
+
+.listings-pagination {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+/* USER*/
+.stripe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user {
+  display: block;
+  overflow: hidden;
+}
+
+.user-trips {
+  margin: 36px auto 0;
+  max-width: 1600px;
+  padding-bottom: 65px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.user-page {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1080px;
+  width: auto;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.user-page-listings {
+  width: 66.66666666666666% !important;
+  float: left !important;
+  padding-left: 16px !important;
+  padding-right: 8px !important;
+  min-height: 1px !important;
+  position: relative !important;
+}
+
+.user-profile {
+  padding-top: 40px;
+  width: 33.33333333333333% !important;
+  float: left !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  min-height: 1px !important;
+  position: relative !important;
+}
+
+.user-card {
+  width: 100%;
+}
+
+.user-pfp {
+  text-align: center;
+}
+.user-info-labels {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+}
+
+.user-personal-info {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(34, 34, 34);
+}
+.user-stripe-button {
+  margin-bottom: 20px;
+}
+
+.user-listings {
+  padding-top: 40px;
+}
+.user-bookings {
+  padding-top: 40px;
+}
+.user-bookings-dates {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Listing*/
+
+.listing {
+  background: #fff;
+  display: block;
+}
+
+.listing-details-image-wrapper {
+  max-width: 1120px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.listing-details-image {
+  max-height: 60vh;
+  width: 100%;
+}
+.listing-details {
+  display: block;
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+.listing-header {
+  max-width: 1120px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: relative;
+}
+.listing-header-wrapper {
+  padding-left: 80px;
+  padding-right: 80px;
+  max-width: none;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.listing-header-title {
+  max-width: 1120px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.listing-details-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+.listing-column-left {
+  position: relative;
+  width: 58.3%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.listing-column-right {
+  width: 33.33%;
+  position: relative;
+  margin-left: 8.33%;
+  margin-right: 0%;
+}
+
+.listing-about-space h3.ant-typography {
+  color: rgb(34, 34, 34);
+}
+.listing-description.ant-typography {
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.listing-pfp {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 100%;
+  width: 100%;
+  min-height: 1px;
+  margin-left: auto;
+}
+.listing-pfp-wrapper {
+  display: block;
+  position: relative !important;
+}
+
+.listing-details-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.listing-details-header-wrapper {
+  font-size: 15px;
+  display: flex;
+}
+.listing-details-header {
+  flex: 0 1 100%;
+  padding-bottom: 20px;
+}
+
+.listing-booking {
+  max-width: 420px;
+  margin: 0 auto;
+  display: block;
+}
+.create-booking-card {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+}
+
+.checkin-checkout.ant-typography {
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+  font-weight: 400;
+}
+.create-booking-price.ant-typography {
+  color: rgb(34, 34, 34);
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.create-booking-dates {
+  padding-bottom: 20px;
+}
+
+.create-booking-button {
+  margin: 0 auto 10px;
+}
+
+.checkout-button {
+  width: 100px;
+}
+
+.checkout-stripe-wrapper {
+  padding-bottom: 10px;
+}
+.checkout-stripe-element {
+  padding: 10px;
+  margin: 40px 0;
+  border: 1px solid #f0f1f2;
+  box-shadow: 0 2px 4px rgba(29, 34, 108, 0.1);
+}
+
+.checkout-summary-text.ant-typography {
+  font: 18px;
+  color: rgb(34, 34, 34);
+}
+
+html {
+  overflow: auto;
+}
+#root,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}

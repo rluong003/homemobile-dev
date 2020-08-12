@@ -1,0 +1,21 @@
+overwrite: true
+schema: "http://localhost:9000/api"
+documents: ./src/**/*.ts
+generates:
+  ./src/lib/graphql/globalTypes.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+  src/:
+    preset: near-operation-file
+    presetConfig:
+      folder: __generated__
+      baseTypesPath: lib/graphql/globalTypes.ts
+    plugins:
+      - typescript-operations
+  
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
+   
+ 
